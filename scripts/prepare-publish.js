@@ -18,7 +18,11 @@ const DEPS_TO_EXCLUDE = [
 const DIRS_TO_COPY = [
     { src: "src/login", dest: "keycloak-theme/login" },
     { src: "src/components", dest: "keycloak-theme/components" },
-    { src: "public/keycloak-theme", dest: "keycloak-theme/public" },
+    {
+        src: "public/early-color-scheme.js",
+        dest: "keycloak-theme/public/early-color-scheme.js"
+    },
+    { src: "public/keycloak-theme", dest: "keycloak-theme/public/keycloak-theme" },
     { src: "README.md", dest: "README.md" }
 ];
 
